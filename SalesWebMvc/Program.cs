@@ -3,6 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using SalesWebMvc.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using SalesWebMvc.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,8 @@ builder.Services.AddDbContext<SalesWebMvcContext>(options =>
 
 
 builder.Services.AddTransient<SeedingService>();
+builder.Services.AddScoped<SeedingService>();
+builder.Services.AddScoped<SellerService>();
 
 builder.Services.AddControllersWithViews();
 

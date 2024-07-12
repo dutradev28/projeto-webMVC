@@ -19,6 +19,8 @@ builder.Services.AddTransient<SeedingService>();
 builder.Services.AddScoped<SeedingService>();
 builder.Services.AddTransient<SellerService>();
 builder.Services.AddScoped<SellerService>();
+builder.Services.AddTransient<DepartmentService>();
+builder.Services.AddScoped<DepartmentService>();
 
 builder.Services.AddControllersWithViews();
 

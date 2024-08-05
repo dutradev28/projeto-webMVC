@@ -23,6 +23,7 @@ builder.Services.AddTransient<SellerService>();
 builder.Services.AddScoped<SellerService>();
 builder.Services.AddTransient<DepartmentService>();
 builder.Services.AddScoped<DepartmentService>();
+builder.Services.AddScoped<SalesRecordsService>();
 
 builder.Services.AddControllersWithViews();
 
